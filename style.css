@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light: hsl(212, 45%, 89%);
+  --Grayish: hsl(220, 15%, 55%);
+  --Dark: hsl(218, 44%, 22%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--Light);
+  font-family: "Fira Sans", sans-serif;
+}
+
+.qr-container {
+  background-color: var(--White);
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 30px;
+}
+.qr-img img {
+  border-radius: 30px;
+}
+.qr-texts {
+  text-align: center;
+}
+.qr-texts h1 {
+  color: var(--Dark);
+}
+.qr-texts p {
+  color: var(--Grayish);
+}
+
+@media screen and (max-width: 768px) {
+  .qr-container {
+    background-color: var(--White);
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    border-radius: 30px;
+  }
+  .qr-img img {
+    border-radius: 30px;
+    width: 300px;
+  }
+  .qr-texts {
+    text-align: center;
+    font-size: 80%;
+  }
+}
